@@ -82,6 +82,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Fixed RemoveComponent on Camera contextual menu to not remove Camera while a component depend on it.
 - Fixed an issue where right eye is not rendered to. [case 1170619](https://issuetracker.unity3d.com/issues/vr-lwrp-terrain-is-not-rendered-in-the-right-eye-of-an-hmd-when-using-single-pass-instanced-stereo-rendering-mode-with-lwrp)
 - Fixed issue where TerrainDetailLit.shader fails to compile when XR is enabled.
+- Fixed an issue that allowed height-based blending on Terrains with more than 4 materials, which is not supported.
+- Fixed an issue where opaque objects were outputting incorrect alpha values [case 1168283](https://issuetracker.unity3d.com/issues/lwrp-alpha-clipping-material-makes-other-materials-look-like-alpha-clipping-when-gameobject-is-shown-in-render-texture)
 
 ## [7.1.1] - 2019-09-05
 ### Upgrade Guide
