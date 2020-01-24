@@ -40,6 +40,9 @@ namespace UnityEditor.Rendering.HighDefinition
 
             if (curUpgradeVersion != MaterialPostprocessor.k_Migrations.Length)
             {
+                EditorUtility.DisplayDialog("HDRP Material Migration", "Your High Definition Render Pipeline version requires a material upgrade." +
+                    " All materials in the project will be re-imported and saved to disk (and checked out if relevant) if changed. \n"+
+                    " Please consult the upgrade guide in the HDRP documentation for more information.", "Ok");
                 ReimportAllMaterials();
             }
 
